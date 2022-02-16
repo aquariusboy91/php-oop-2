@@ -4,6 +4,8 @@
        protected $name_user;
        protected $lastname_user;
        protected $email; 
+       protected $premium;
+       protected $sconto = 0;
 
 
        public function __construct($name_user, $lastname_user) {
@@ -43,6 +45,7 @@
   {
     return $this->email;
   }
-    }
+
+}
 
 ?>
