@@ -5,9 +5,8 @@
 
         protected $level;
 
-        public function __construct($name, $lastName, $level)
+        public function __construct($level)
         {
-          parent::__construct($name, $lastName);
           $this->setLevel($level);
         }
 
@@ -26,8 +25,7 @@
 
         public function setSconto($premium)
     {
-        $this->premium = $premium;
-        if ($premium == true) {
+        if ($premium === true) {
         $this->sconto = $this->level * 10;
         }
     }

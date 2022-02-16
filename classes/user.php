@@ -2,15 +2,17 @@
 
     class User {
        protected $name_user;
-       protected $lastname_user;
-       protected $email; 
+       protected $lastname_user; 
        protected $premium;
-       protected $sconto = 0;
+       protected $email;
+       protected $sconto;
 
 
-       public function __construct($name_user, $lastname_user) {
+       public function __construct($name_user, $lastname_user, $premium, $sconto) {
         $this->name_user = $name_user;
         $this->lastname_user = $lastname_user;
+        $this->premium = $premium;
+        $this->premium = $premium;
        }
 
        public function setName_user($name_user)
@@ -35,6 +37,17 @@
     return $this->lastname_user;
   }
 
+  public function setPremium($premium)
+  {
+   
+    $this->premium = $premium;
+  }
+
+  public function getPremium()
+  {
+    return $this->premium;
+  }
+
   public function setEmail($email)
   {
    
@@ -44,6 +57,17 @@
   public function getEmail()
   {
     return $this->email;
+  }
+
+  public function setSconto($sconto)
+  {
+   
+    $this->sconto = $sconto;
+  }
+
+  public function getSconto()
+  {
+    return $this->sconto;
   }
 
 }
