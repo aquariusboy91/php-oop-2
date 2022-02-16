@@ -5,13 +5,12 @@
        protected $lastname_user; 
        protected $premium;
        protected $email;
-       protected $sconto;
+       protected $sconto = 0;
 
 
-       public function __construct($name_user, $lastname_user, $premium, $sconto) {
+       public function __construct($name_user, $lastname_user, $premium) {
         $this->name_user = $name_user;
         $this->lastname_user = $lastname_user;
-        $this->premium = $premium;
         $this->premium = $premium;
        }
 
